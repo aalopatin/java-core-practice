@@ -1,4 +1,4 @@
-package horstmann.my.chapter3.strings36;
+package horstmann.my.chapter03.part0306strings;
 
 public class Main {
     public static void main(String[] args) {
