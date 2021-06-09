@@ -1,4 +1,4 @@
-package horstmann.sources.chapter09.part0901.Linkedlist;
+package horstmann.sources.chapter09.part0903.linkedlist;
 
 import java.util.Iterator;
 import java.util.LinkedList;
