@@ -7,7 +7,7 @@ import java.util.function.BiConsumer;
 
 public class ComparisonArrayLinked {
 
-    public static int COUNT = 1000;
+    public static int COUNT = 10000;
 
     public static void main(String[] args) {
 
@@ -25,7 +25,7 @@ public class ComparisonArrayLinked {
         }};
         LinkedList<String> linkedList = new LinkedList<>(arrayList);
 
-        ArrayList<String> emptyArraylist = new ArrayList<>(1000);
+        ArrayList<String> emptyArraylist = new ArrayList<>(10000);
         LinkedList<String> emptyLinkedList = new LinkedList<>();
 
         perform("Add in empty",
@@ -33,6 +33,16 @@ public class ComparisonArrayLinked {
                 emptyLinkedList,
                 (i, list) -> list.add(i, "String" + i)
         );
+
+        perform("Index of",
+                emptyArraylist,
+                emptyLinkedList,
+                (i, list) -> list.indexOf("String" + i));
+
+        perform("Contains",
+                emptyArraylist,
+                emptyLinkedList,
+                (i, list) -> list.contains("String" + i));
 
         perform("Add index 5",
                 arrayList,
