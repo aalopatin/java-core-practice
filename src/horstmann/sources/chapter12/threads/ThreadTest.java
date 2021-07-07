@@ -1,4 +1,4 @@
-package horstmann.sources.chapter12.part1201.threads;
+package horstmann.sources.chapter12.threads;
 
 public class ThreadTest {
     public static final int DELAY = 10;
